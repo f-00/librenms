@@ -177,7 +177,7 @@ Example: `macros.device_component_down_junos = 1`
 
 ### Device component down [Cisco]
 
-Entity: `sensors.sensor_current != 1 AND sensors.sensor_current != 5 AND sensors.sensor_type ~ "^cisco.*State$"`
+Entity: `sensors.sensor_current != 1 AND sensors.sensor_current != 5 AND sensors.sensor_type REGEXP "^cisco.*State$"`
 
 Description: Device component is down such as Fan, PSU, etc for Cisco devices.
 
